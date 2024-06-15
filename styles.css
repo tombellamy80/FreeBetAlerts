@@ -17,82 +17,55 @@ body {
 header {
     background-color: #1a237e; /* Navy blue background */
     color: #fff;
-    padding: 15px 0; /* Reduced padding top and bottom */
+    padding: 15px 20px; /* Padding adjusted */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .banner {
-    background-color: #1a237e; /* Same as header background for consistency */
-    color: #fff;
-    padding: 10px 0; /* Padding adjusted */
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    align-items: center;
 }
 
 .banner h1 {
     margin: 0;
-    font-size: 2.5rem; /* Slightly larger font size */
+    font-size: 2rem; /* Adjusted font size */
 }
 
-/* Main styles */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-/* Section styles */
-section {
-    margin: 20px 0; /* Space between sections */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
-section h2 {
-    font-size: 1.5rem;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a237e;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* Today's Offers section */
-#today-offers {
-    flex-direction: row; /* Display offers horizontally */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow wrapping of offer items */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-.offer-item {
-    margin: 20px; /* Space around each offer item */
-    text-align: center;
-}
+.dropdown-content a:hover {background-color: #ddd;}
 
-.offer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px; /* Padding around each offer */
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-}
+.dropdown:hover .dropdown-content {display: block;}
 
-.offer-photo {
-    width: 200px; /* Default image width */
-    height: auto; /* Auto height to maintain aspect ratio */
-    border-radius: 10px; /* Slightly rounded edges */
-}
-
-/* Adjust size for individual images */
-.offer-item:nth-child(1) .offer-photo {
-    width: 150px; /* Adjust width for the first offer image */
-}
-
-.offer-item:nth-child(2) .offer-photo {
-    width: 180px; /* Adjust width for the second offer image */
-}
-
-/* Add more nth-child selectors as needed for other offer items */
+.dropdown:hover .dropbtn {background-color: #1a237e;}
