@@ -64,12 +64,12 @@ section h2 {
 }
 
 .offer-list {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between offer items */
 }
 
 .offer-item {
-    margin: 20px 0; /* Space between each offer item */
     text-align: center;
 }
 
@@ -78,19 +78,14 @@ section h2 {
     border-radius: 10px; /* Rounded corners */
     background-color: #f0f0f0; /* Light grey background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-    display: inline-block; /* Display inline for horizontal alignment */
+    width: 200px; /* Fixed width for offer items */
 }
 
 .offer-photo {
-    width: 200px; /* Default image width */
+    width: 100%; /* Full width of container */
     height: auto; /* Auto height to maintain aspect ratio */
     border-radius: 10px; /* Slightly rounded edges */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-}
-
-/* Adjust size for individual images */
-.offer-item:nth-child(odd) .offer-photo {
-    width: 150px; /* Adjust width for specific images */
 }
 
 .offer-text {
