@@ -23,7 +23,7 @@ header {
 .banner {
     background-color: #000;
     color: #fff;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -82,7 +82,7 @@ section h2 {
     height: 150px; /* Adjust image size as needed */
     object-fit: cover; /* Ensure the image covers the container */
     border-radius: 50%; /* Rounded shape for image */
-    margin-bottom: 10px; /* Space between image and text */
+    margin-bottom: 20px; /* Space between image and text */
 }
 
 .offer-text {
