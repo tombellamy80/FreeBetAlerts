@@ -15,15 +15,15 @@ body {
 
 /* Header styles */
 header {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333;
-    padding: 20px 0; /* Increased padding top and bottom */
+    background-color: #3b7a3d; /* Darker green background */
+    color: #fff;
+    padding: 15px 0; /* Reduced padding top and bottom */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .banner {
-    background-color: #f0f0f0; /* Same as header background for consistency */
-    color: #333;
+    background-color: #3b7a3d; /* Same as header background for consistency */
+    color: #fff;
     padding: 10px 0; /* Padding adjusted */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -45,7 +45,7 @@ main {
 
 /* Section styles */
 section {
-    margin: 20px 0; /* Reduced margin between sections */
+    margin: 10px 0; /* Reduced margin between sections */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -80,10 +80,15 @@ section h2 {
 }
 
 .offer-photo {
-    width: 200px; /* Adjust image width */
+    width: 200px; /* Default image width */
     height: auto; /* Auto height to maintain aspect ratio */
     border-radius: 10px; /* Slightly rounded edges */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Adjust size for individual images */
+.offer-item:nth-child(odd) .offer-photo {
+    width: 150px; /* Adjust width for SkyBet image */
 }
 
 .offer-text {
