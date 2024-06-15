@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -11,6 +12,7 @@ body {
     color: #333;
     text-align: center;
 }
+
 /* Header styles */
 header {
     background-color: #1a237e; /* Navy blue background */
@@ -18,6 +20,7 @@ header {
     padding: 15px 0; /* Reduced padding top and bottom */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+
 .banner {
     background-color: #1a237e; /* Same as header background for consistency */
     color: #fff;
@@ -25,10 +28,12 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+
 .banner h1 {
     margin: 0;
     font-size: 2.5rem; /* Slightly larger font size */
 }
+
 /* Main styles */
 main {
     display: flex;
@@ -37,6 +42,7 @@ main {
     justify-content: center;
     min-height: 100vh;
 }
+
 /* Section styles */
 section {
     margin: 20px 0; /* Space between sections */
@@ -47,18 +53,17 @@ section {
     max-width: 800px;
     text-align: center;
 }
+
 section h2 {
     font-size: 1.5rem;
 }
+
 /* Today's Offers section */
 #today-offers {
     flex-direction: column; /* Display offers vertically */
 }
 
 .offer-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between offer items */
     list-style: none;
     padding: 0;
 }
@@ -69,18 +74,21 @@ section h2 {
 }
 
 .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15px; /* Padding around each offer */
     border-radius: 10px; /* Rounded corners */
     background-color: #f0f0f0; /* Light grey background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-    width: 200px; /* Fixed width for offer items */
 }
+
 .offer-photo {
-    width: 100%; /* Full width of container */
+    width: 200px; /* Default image width */
     height: auto; /* Auto height to maintain aspect ratio */
     border-radius: 10px; /* Slightly rounded edges */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+
 .offer-text {
     font-weight: bold;
     font-size: 1rem; /* Adjust text size */
