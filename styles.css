@@ -64,12 +64,12 @@ section h2 {
 }
 
 .offer-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between offer items */
+    list-style: none;
+    padding: 0;
 }
 
 .offer-item {
+    margin: 20px 0; /* Space between each offer item */
     text-align: center;
 }
 
