@@ -85,34 +85,36 @@ ul {
     margin: 0;
 }
 
-ul li {
-    margin: 10px 0;
+.offer-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.offer-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.offer {
+    position: relative;
+    width: 150px; /* Adjust container size as needed */
+    height: 150px; /* Adjust container size as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.offer-photo-container {
-    position: relative;
-    width: 100px; /* Adjust container size as needed */
-    height: 100px; /* Adjust container size as needed */
-    margin-right: 10px;
-}
-
 .offer-photo {
-    width: 30%;
-    height: 30%;
-    object-fit: cover; /* Ensures the image covers the entire container */
-    border-radius: 8px; /* Rounded corners for image */
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Rounded shape for image */
 }
 
 .offer-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+    margin-top: 10px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Optional text shadow */
-    text-align: center;
-    z-index: 10; /* Ensure text is above the image */
 }
