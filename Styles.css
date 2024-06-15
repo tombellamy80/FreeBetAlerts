@@ -1,24 +1,29 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
 }
 
+/* Header styles */
 header {
     width: 100%;
     background-color: #000;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
 }
 
 .banner {
@@ -33,6 +38,7 @@ header {
     font-size: 2rem;
 }
 
+/* Main styles */
 main {
     width: 100%;
     max-width: 800px;
@@ -40,18 +46,17 @@ main {
     text-align: center;
 }
 
+/* Section styles */
 section {
     margin: 40px 0;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
 }
 
 section h2 {
-    position: relative;
     font-size: 1.5rem;
+    position: relative;
 }
 
 section h2 span {
@@ -64,6 +69,7 @@ section h2 span {
     cursor: pointer;
 }
 
+/* Footer styles */
 footer {
     width: 100%;
     padding: 10px 0;
@@ -72,6 +78,7 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* List styles */
 ul {
     list-style: none;
     padding: 0;
@@ -80,13 +87,14 @@ ul {
 
 ul li {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
-ul li a {
-    color: #007BFF;
-    text-decoration: none;
+.offer-photo {
+    width: 100px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px; /* Rounded corners for image */
 }
 
-ul li a:hover {
-    text-decoration: underline;
-}
