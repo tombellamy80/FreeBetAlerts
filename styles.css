@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -12,7 +11,6 @@ body {
     color: #333;
     text-align: center;
 }
-
 /* Header styles */
 header {
     background-color: #1a237e; /* Navy blue background */
@@ -20,7 +18,6 @@ header {
     padding: 15px 0; /* Reduced padding top and bottom */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
-
 .banner {
     background-color: #1a237e; /* Same as header background for consistency */
     color: #fff;
@@ -28,12 +25,10 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
-
 .banner h1 {
     margin: 0;
     font-size: 2.5rem; /* Slightly larger font size */
 }
-
 /* Main styles */
 main {
     display: flex;
@@ -42,7 +37,6 @@ main {
     justify-content: center;
     min-height: 100vh;
 }
-
 /* Section styles */
 section {
     margin: 20px 0; /* Space between sections */
@@ -53,7 +47,6 @@ section {
     max-width: 800px;
     text-align: center;
 }
-
 section h2 {
     font-size: 1.5rem;
 }
@@ -66,10 +59,14 @@ section h2 {
 .offer-list {
     list-style: none;
     padding: 0;
+    flex-direction: row; /* Display offers horizontally */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping of offer items */
 }
 
 .offer-item {
     margin: 20px 0; /* Space between each offer item */
+    margin: 20px; /* Space around each offer item */
     text-align: center;
 }
 
@@ -78,6 +75,7 @@ section h2 {
     flex-direction: column;
     align-items: center;
     padding: 15px; /* Padding around each offer */
+    border: 1px solid #ddd; /* Light grey border */
     border-radius: 10px; /* Rounded corners */
     background-color: #f0f0f0; /* Light grey background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
@@ -92,5 +90,14 @@ section h2 {
 .offer-text {
     font-weight: bold;
     font-size: 1rem; /* Adjust text size */
-    margin-top: 10px; /* Space between image and text */
+    margin-top: 15px; /* Space between image and text */
+/* Adjust size for individual images */
+.offer-item:nth-child(1) .offer-photo {
+    width: 150px; /* Adjust width for the first offer image */
 }
+
+.offer-item:nth-child(2) .offer-photo {
+    width: 180px; /* Adjust width for the second offer image */
+}
+
+/* Add more nth-child selectors as needed for other offer items */
