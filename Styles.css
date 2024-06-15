@@ -11,16 +11,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
 }
 
 /* Header styles */
 header {
-    width: 100%;
     background-color: #000;
     color: #fff;
     padding: 10px 0;
@@ -40,10 +34,11 @@ header {
 
 /* Main styles */
 main {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 /* Section styles */
@@ -52,44 +47,23 @@ section {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
 
 section h2 {
     font-size: 1.5rem;
-    position: relative;
 }
 
-section h2 span {
-    display: block;
-    font-size: 0.8em;
-    position: absolute;
-    bottom: -0.5em;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-}
-
-/* Footer styles */
-footer {
-    width: 100%;
-    padding: 10px 0;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* List styles */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
+/* Offer styles */
 .offer-list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
 }
 
 .offer-item {
@@ -98,23 +72,19 @@ ul {
 }
 
 .offer {
-    position: relative;
-    width: 150px; /* Adjust container size as needed */
-    height: 150px; /* Adjust container size as needed */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .offer-photo {
-    width: 100px; /* Adjust image size as needed */
-    height: 100px; /* Adjust image size as needed */
-    object-fit: cover;
+    width: 150px; /* Adjust image size as needed */
+    height: 150px; /* Adjust image size as needed */
+    object-fit: cover; /* Ensure the image covers the container */
     border-radius: 50%; /* Rounded shape for image */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 .offer-text {
-    margin-top: 10px;
     font-weight: bold;
 }
