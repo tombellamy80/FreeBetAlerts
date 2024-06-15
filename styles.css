@@ -17,7 +17,8 @@ body {
 header {
     background-color: #1a237e; /* Navy blue background */
     color: #fff;
-    padding: 15px 0; /* Reduced padding top and bottom */
+    padding: 10px 0; /* Reduced padding top and bottom */
+    margin-bottom: 20px; /* Less space between header and main content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
@@ -69,7 +70,7 @@ section h2 {
 }
 
 .offer-item {
-    margin: 20px 0; /* Space between each offer item */
+    margin-bottom: 20px; /* Space between each offer item */
     text-align: center;
 }
 
@@ -79,6 +80,7 @@ section h2 {
     background-color: #f0f0f0; /* Light grey background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
     width: 200px; /* Fixed width for offer items */
+    margin: auto; /* Center horizontally */
 }
 
 .offer-photo {
