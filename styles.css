@@ -81,6 +81,7 @@ section h2 {
     border-radius: 10px; /* Rounded corners */
     background-color: #f0f0f0; /* Light grey background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    margin: 0 10px; /* Adjust spacing between offers */
 }
 
 .offer-photo {
@@ -94,4 +95,9 @@ section h2 {
     font-weight: bold;
     font-size: 1rem; /* Adjust text size */
     margin-top: 10px; /* Space between image and text */
+}
+
+/* Adjust size for individual images */
+.offer-item:nth-child(odd) .offer-photo {
+    width: 150px; /* Adjust width for specific images */
 }
