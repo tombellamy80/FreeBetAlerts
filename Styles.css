@@ -94,7 +94,7 @@ ul li {
 .offer-photo {
     width: 20px; /* Adjust image size as needed */
     height: auto;
-    margin-right: 10px;
+    margin-right: 30px;
     border-radius: 8px; /* Rounded corners for image */
 }
 
